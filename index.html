@@ -32,8 +32,8 @@ h1, h2, span {
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 120px;
-    font-size: 90px;
+    top: 743px;
+    font-size: 116px;
     background: -webkit-linear-gradient(0deg, #ceadfc 0%, #a3bbfb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,7 +47,7 @@ h1, h2, span {
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 70px;
+    top: 1107px;
     font-size: 70px;
   }
 
@@ -55,8 +55,8 @@ h1, h2, span {
     position: fixed;
     text-align: center;
     width: 100%;
-    top: 50px;
-    font-size: 90px;
+    top: 100px;
+    font-size: 97px;
     background: -webkit-linear-gradient(90deg, #e9e6ff 0%, white 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -686,7 +686,7 @@ h1, h2, span {
   }
   .cake {
     position: relative;
-    top: 250px;
+    top: 404px;
     margin: auto;
     width: 200px;
     height: 60px;
@@ -702,7 +702,7 @@ h1, h2, span {
     width: 300px;
     bottom: -95px;
     left: 50%;
-    top: 380px;
+    top: 542px;
     margin-left: -150px;
     border-radius: 100%;
     background: radial-gradient(ellipse closest-side at center, #08c7fe 0%, #04d7f2 71%, #02ffd0 100%);
@@ -714,7 +714,7 @@ h1, h2, span {
     position: relative;
     height: 50px;
     width: 12px;
-    top: 280px;
+    top: 435px;
     margin: auto;
     background: linear-gradient(0deg, #b7f4a7 0%, white 100%);
     border-radius: 4px;
@@ -978,49 +978,91 @@ h1, h2, span {
   }
 }
 #box {
-            width: 1000px;
-            height: 800px;
-            margin: 0 auto;
-            margin-top: 50px;
-            position: relative;
-        }
-        .box01, .box02, .box03, .box04, .box05, .box06, .box07, .box08, .box09 {
-            width: 300px;
-            height: 300px;
-            border-radius: 300px 0;
-            background: pink;
-            opacity: 0.6;
-            position: absolute;
-            bottom: 100px;
-            left: 500px;
-            transform-origin: 0 300px;
-            transform: rotate(-45deg);
-            transition: all .5s;
-        }
-        #box:hover :nth-child(3){
-            transform:rotate(-23deg);
-        }
-        #box:hover :nth-child(4){
-            transform:rotate(0deg);
-        }
-        #box:hover :nth-child(5){
-            transform:rotate(23deg);
-        }
-        #box:hover :nth-child(6){
-            transform:rotate(45deg);
-        }
-        #box:hover :nth-child(7){
-            transform:rotate(-68deg);
-        }
-        #box:hover :nth-child(8){
-            transform:rotate(-90deg);
-        }
-        #box:hover :nth-child(9){
-            transform:rotate(-113deg);
-        }
-        #box:hover :nth-child(10){
-            transform:rotate(-135deg);
-        }
+    position:fixed;
+    top: 405px;
+    width: 1000px;
+    height: 800px;
+    margin: 0 auto;
+    opacity:.8;
+    z-index:-2;
+}
+.box01, .box02, .box03, .box04, .box05, .box06, .box07, .box08, .box09 {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px 0;
+    background: pink;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 100px;
+    left: 500px;
+    transform-origin: 0 300px;
+    transform: rotate(-45deg);
+    transition: all .5s;
+}
+.box03{
+    animation: box3 2s forwards;
+}
+@keyframes box3
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(-23deg);}
+}
+.box04{
+    animation: box4 2s forwards;
+}
+@keyframes box4
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(0deg);}
+}
+.box05{
+    animation: box5 2s forwards;
+}
+@keyframes box5
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(23deg);}
+}
+.box07{
+    animation: box7 2s forwards;
+}
+@keyframes box7
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(-68deg);}
+}
+.box08{
+    animation: box8 2s forwards;
+}
+@keyframes box8
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(-90deg);}
+}
+.box09{
+    animation: box9 2s forwards;
+}
+@keyframes box9
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(-113deg);}
+}
+.box10{
+    animation: box10 2s forwards;
+}
+@keyframes box10
+{
+    from{transform: rotate(-45deg);}
+    to{transform:rotate(-135deg);}
+}
+.info{
+  position: fixed;
+  right: 60px;
+  bottom: -1500px;
+  font-family: 微软雅黑;
+  color: #fff;
+  font-size: 40px;
+}
 </style>
 </head>
 
@@ -1073,13 +1115,25 @@ h1, h2, span {
 <bokeh></bokeh>
 <h1>I love you three thousands!</h1>
 <h2>Happy mother's day!</h2>
-<span>🎉</span>
+<span>🥳</span>
 <div class="candle">
 <div id="flame" class="lit"></div>
 </div>
 
 <div class="cake"></div>
 <div class="plate"></div>
+<div class="info">by-晓温</div>
+<div id="box">
+    <div class="box01"></div>
+    <div class="box02"></div>
+    <div class="box03"></div>
+    <div class="box04"></div>
+    <div class="box05"></div>
+    <div class="box06"></div>
+    <div class="box07"></div>
+    <div class="box08"></div>
+    <div class="box09"></div>
+</div>
 </body>
 
 </html>
